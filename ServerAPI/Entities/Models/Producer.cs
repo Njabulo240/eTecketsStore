@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using ServerAPI.Contracts;
 
 namespace ServerAPI.Entities.Models
@@ -6,7 +7,8 @@ namespace ServerAPI.Entities.Models
      public class Producer
     {
         [Key]
-        public int Id { get; set; }
+         [Column("ProducerId")]
+        public Guid Id { get; set; }
 
         [Display(Name = "Profile Picture")]
         [Required(ErrorMessage = "Profile Picture is required")]

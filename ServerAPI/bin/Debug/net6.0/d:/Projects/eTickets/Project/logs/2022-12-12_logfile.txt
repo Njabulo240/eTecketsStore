@@ -1,0 +1,4 @@
+2022-12-12 17:28:34.3985 INFO Returned all owners from database.
+2022-12-12 17:50:02.3487 ERROR Something went wrong inside GetAllActors action: The entity type 'Order' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+2022-12-12 17:50:47.4126 ERROR Something went wrong inside GetAllMovies action: The entity type 'Order' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+2022-12-12 18:04:11.6848 INFO Returned all Actor from database.

@@ -4,6 +4,6 @@ namespace ServerAPI.Contracts
 {
     public interface IProducerRepository: IRepositoryBase<Producer>
     {
-         
+             IEnumerable<Producer> GetAllProducers();
     }
 }

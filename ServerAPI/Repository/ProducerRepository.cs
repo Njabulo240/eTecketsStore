@@ -8,5 +8,12 @@ namespace ServerAPI.Repository
         public ProducerRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
+
+        public IEnumerable<Producer> GetAllProducers()
+        {
+            return FindAll()
+                .OrderBy(ow => ow.ProfilePictureURL)
+                .ToList();
+        }
     }
 }

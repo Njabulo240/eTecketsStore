@@ -4,6 +4,6 @@ namespace ServerAPI.Contracts
 {
     public interface IMovieRepository : IRepositoryBase<Movie>
     {
-         
+         IEnumerable<Movie> GetAllMovies();
     }
 }

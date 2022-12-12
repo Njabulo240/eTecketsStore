@@ -8,5 +8,12 @@ namespace ServerAPI.Repository
         public MovieRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
+
+        public IEnumerable<Movie> GetAllMovies()
+        {
+                return FindAll()
+                .OrderBy(ow => ow.Name)
+                .ToList();
+        }
     }
 }

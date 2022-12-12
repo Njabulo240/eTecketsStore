@@ -4,6 +4,6 @@ namespace ServerAPI.Contracts
 {
     public interface IActorRepository : IRepositoryBase<Actor>
     {
-         
+             IEnumerable<Actor> GetAllActors();
     }
 }

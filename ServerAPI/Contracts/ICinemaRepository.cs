@@ -4,6 +4,6 @@ namespace ServerAPI.Contracts
 {
     public interface ICinemaRepository :IRepositoryBase<Cinema>
     {
-         
+             IEnumerable<Cinema> GetAllCinemas();
     }
 }

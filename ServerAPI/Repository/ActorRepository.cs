@@ -8,5 +8,12 @@ namespace ServerAPI.Repository
         public ActorRepository(RepositoryContext repositoryContext) : base(repositoryContext)
         {
         }
+
+        public IEnumerable<Actor> GetAllActors()
+        {
+                      return FindAll()
+                .OrderBy(ow => ow.ProfilePictureURL)
+                .ToList();
+        }
     }
 }

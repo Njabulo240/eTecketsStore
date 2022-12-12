@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using ServerAPI.Contracts;
 
 namespace ServerAPI.Entities.Models
@@ -6,7 +7,8 @@ namespace ServerAPI.Entities.Models
      public class Cinema
     {
         [Key]
-        public int Id { get; set; }
+        [Column("CinemaId")]
+        public Guid Id { get; set; }
 [Display(Name = "Cinema Logo")]
         [Required(ErrorMessage = "Cinema logo is required")]
         public string Logo { get; set; }

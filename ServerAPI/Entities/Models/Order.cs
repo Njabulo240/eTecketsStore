@@ -6,7 +6,8 @@ namespace ServerAPI.Entities.Models
     public class Order
     {
         [Key]
-        public int Id { get; set; }
+        [Column("MovieId")]
+        public Guid Id { get; set; }
 
         public string Email { get; set; }
         public string UserId { get; set; }
