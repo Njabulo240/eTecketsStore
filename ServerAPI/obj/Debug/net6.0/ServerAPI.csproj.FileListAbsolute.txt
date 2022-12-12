@@ -250,3 +250,5 @@
 /home/njabulo/upwork project/eTickets/ServerAPI/obj/Debug/net6.0/ServerAPI.pdb
 /home/njabulo/upwork project/eTickets/ServerAPI/obj/Debug/net6.0/ServerAPI.genruntimeconfig.cache
 /home/njabulo/upwork project/eTickets/ServerAPI/obj/Debug/net6.0/ref/ServerAPI.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/AutoMapper.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

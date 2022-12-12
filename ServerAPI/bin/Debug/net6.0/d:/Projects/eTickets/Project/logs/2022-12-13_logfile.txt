@@ -1,0 +1,5 @@
+2022-12-13 00:08:27.8480 INFO Returned all Movie from database.
+2022-12-13 00:08:43.3930 INFO Returned owner with details for id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-13 00:10:43.3321 INFO Returned all Movie from database.
+2022-12-13 00:16:36.2166 INFO Returned all Movie from database.
+2022-12-13 00:16:48.8685 INFO Returned movie with id: 8a6c20f5-00b1-4e13-be35-7800593d3398

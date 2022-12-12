@@ -1,14 +1,10 @@
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using ServerAPI.Contracts;
 
-namespace ServerAPI.Entities.Models
+namespace ServerAPI.Entities.DataTransferObjects
 {
-     public class Cinema
+    public class CinemaDto
     {
-        [Key]
-        [Column("CinemaId")]
-        public Guid Id { get; set; }
+         public Guid Id { get; set; }
 [Display(Name = "Cinema Logo")]
         [Required(ErrorMessage = "Cinema logo is required")]
         public string Logo { get; set; }
@@ -20,8 +16,5 @@ namespace ServerAPI.Entities.Models
         [Display(Name = "Description")]
         [Required(ErrorMessage = "Cinema description is required")]
         public string Description { get; set; }
-
-        //Relationships
-          public ICollection<Movie> Movies { get; set; }
     }
 }

@@ -11,7 +11,7 @@ using ServerAPI.Repository;
 namespace ServerAPI.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20221212160320_models Id")]
+    [Migration("20221212202855_models Id")]
     partial class modelsId
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -306,7 +306,7 @@ namespace ServerAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ServerAPI.Entities.Models.Producer", "Producer")
+                    b.HasOne("ServerAPI.Entities.Models.Producer", "Producers")
                         .WithMany("Movies")
                         .HasForeignKey("ProducerId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -314,7 +314,7 @@ namespace ServerAPI.Migrations
 
                     b.Navigation("Cinema");
 
-                    b.Navigation("Producer");
+                    b.Navigation("Producers");
                 });
 
             modelBuilder.Entity("ServerAPI.Entities.Models.Order", b =>

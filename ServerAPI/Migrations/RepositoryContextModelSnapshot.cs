@@ -304,7 +304,7 @@ namespace ServerAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ServerAPI.Entities.Models.Producer", "Producer")
+                    b.HasOne("ServerAPI.Entities.Models.Producer", "Producers")
                         .WithMany("Movies")
                         .HasForeignKey("ProducerId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -312,7 +312,7 @@ namespace ServerAPI.Migrations
 
                     b.Navigation("Cinema");
 
-                    b.Navigation("Producer");
+                    b.Navigation("Producers");
                 });
 
             modelBuilder.Entity("ServerAPI.Entities.Models.Order", b =>

@@ -1,15 +1,9 @@
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using ServerAPI.Contracts;
 
-namespace ServerAPI.Entities.Models
+namespace ServerAPI.Entities.DataTransferObjects
 {
-     public class Producer
+    public class ActorForCreationDto
     {
-        [Key]
-         [Column("ProducerId")]
-        public Guid Id { get; set; }
-
         [Display(Name = "Profile Picture")]
         [Required(ErrorMessage = "Profile Picture is required")]
         public string ProfilePictureURL { get; set; }
@@ -22,8 +16,5 @@ namespace ServerAPI.Entities.Models
         [Display(Name = "Biography")]
         [Required(ErrorMessage = "Biography is required")]
         public string Bio { get; set; }
-
-        //Relationships
-        public ICollection<Movie> Movies { get; set; }
     }
 }

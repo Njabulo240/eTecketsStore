@@ -9,11 +9,27 @@ namespace ServerAPI.Repository
         {
         }
 
+        public void CreateProducer(Producer producer)
+        {
+            Create(producer);
+        }
+
         public IEnumerable<Producer> GetAllProducers()
         {
             return FindAll()
                 .OrderBy(ow => ow.ProfilePictureURL)
                 .ToList();
+        }
+
+        public Producer GetProducerById(Guid producerId)
+        {
+               return FindByCondition(producer => producer.Id.Equals(producerId))
+            .FirstOrDefault();
+        }
+
+        public Producer GetProducerWithDetails(Guid producerId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

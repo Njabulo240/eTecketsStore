@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.HttpOverrides;
 using NLog;
 using ServerAPI.Extensions;
@@ -17,6 +18,8 @@ builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureMySqlContext(builder.Configuration);
 
 builder.Services.ConfigureRepositoryWrapper();
+
+builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

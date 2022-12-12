@@ -9,6 +9,22 @@ namespace ServerAPI.Repository
         {
         }
 
+        public void CreateOwner(Actor actor)
+        {
+            Create(actor);
+        }
+
+        public Actor GetActorById(Guid actorId)
+        {
+             return FindByCondition(actor => actor.Id.Equals(actorId))
+            .FirstOrDefault();
+        }
+
+        public Actor GetActorWithDetails(Guid actorId)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Actor> GetAllActors()
         {
                       return FindAll()

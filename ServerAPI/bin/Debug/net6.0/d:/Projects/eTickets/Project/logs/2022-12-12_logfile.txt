@@ -2,3 +2,144 @@
 2022-12-12 17:50:02.3487 ERROR Something went wrong inside GetAllActors action: The entity type 'Order' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
 2022-12-12 17:50:47.4126 ERROR Something went wrong inside GetAllMovies action: The entity type 'Order' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
 2022-12-12 18:04:11.6848 INFO Returned all Actor from database.
+2022-12-12 18:09:03.0685 INFO Returned all Cinema from database.
+2022-12-12 18:09:13.8521 INFO Returned all Producers from database.
+2022-12-12 18:50:31.5203 INFO Returned all Actor from database.
+2022-12-12 19:41:35.7820 INFO Returned all Actor from database.
+2022-12-12 19:41:42.6804 INFO Returned all Cinema from database.
+2022-12-12 19:41:50.4606 INFO Returned all Movie from database.
+2022-12-12 19:41:57.4176 INFO Returned all Producers from database.
+2022-12-12 20:06:47.1457 INFO Returned actor with id: 5d84f7b1-15bb-4736-be17-23dbbcd25f4f
+2022-12-12 20:23:55.2321 INFO Returned movie with details for id: b16a5d23-b695-4c9c-9a72-3f5fe4d9c1cd
+2022-12-12 22:20:53.6519 INFO Returned movie with details for id: b16a5d23-b695-4c9c-9a72-3f5fe4d9c1cd
+2022-12-12 22:20:53.6950 ERROR Something went wrong inside GetOwnerWithDetails action: Error mapping types.
+
+Mapping types:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Type Map configuration:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Destination Member:
+Producers
+
+2022-12-12 22:22:05.3042 INFO Returned movie with details for id: b16a5d23-b695-4c9c-9a72-3f5fe4d9c1cd
+2022-12-12 22:22:05.3042 ERROR Something went wrong inside GetOwnerWithDetails action: Error mapping types.
+
+Mapping types:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Type Map configuration:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Destination Member:
+Producers
+
+2022-12-12 22:22:29.1505 INFO Returned movie with id: b16a5d23-b695-4c9c-9a72-3f5fe4d9c1cd
+2022-12-12 22:25:16.1685 INFO Returned movie with details for id: b16a5d23-b695-4c9c-9a72-3f5fe4d9c1cd
+2022-12-12 22:25:16.2175 ERROR Something went wrong inside GetOwnerWithDetails action: Error mapping types.
+
+Mapping types:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Type Map configuration:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Destination Member:
+Producers
+
+2022-12-12 22:33:06.8919 INFO Returned all Actor from database.
+2022-12-12 22:33:30.3709 INFO Returned actor with id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 22:33:38.9910 INFO Returned all Cinema from database.
+2022-12-12 22:33:58.3286 INFO Returned cinema with id: ceaa8210-de55-459d-879f-d4ec3a5a1f0f
+2022-12-12 22:34:09.3694 INFO Returned all Producers from database.
+2022-12-12 22:34:24.8436 INFO Returned owner with id: b16a5d23-b695-4c9c-9a72-3f5fe4d9c1cd
+2022-12-12 22:34:33.3403 INFO Returned all Movie from database.
+2022-12-12 22:34:49.6828 INFO Returned movie with id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 22:35:03.0580 INFO Returned movie with details for id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 22:35:03.0618 ERROR Something went wrong inside GetOwnerWithDetails action: Error mapping types.
+
+Mapping types:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Type Map configuration:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Destination Member:
+Producers
+
+2022-12-12 22:41:59.5538 INFO Returned all Movie from database.
+2022-12-12 22:42:16.3589 INFO Returned movie with details for id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 22:42:16.3696 ERROR Something went wrong inside GetMovieWithDetails action: Error mapping types.
+
+Mapping types:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Type Map configuration:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Destination Member:
+Producers
+
+2022-12-12 22:43:46.1134 INFO Returned all Movie from database.
+2022-12-12 22:44:00.8246 ERROR Something went wrong inside GetMovieWithDetails action: Error mapping types.
+
+Mapping types:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Type Map configuration:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Destination Member:
+Producers
+
+2022-12-12 22:47:46.2576 INFO Returned all Movie from database.
+2022-12-12 22:52:03.5295 INFO Returned all Movie from database.
+2022-12-12 22:57:16.6999 INFO Returned all Movie from database.
+2022-12-12 22:57:33.9963 INFO Returned owner with details for id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 22:57:34.0063 ERROR Something went wrong inside GetOwnerWithDetails action: Error mapping types.
+
+Mapping types:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Type Map configuration:
+Movie -> MovieDto
+ServerAPI.Entities.Models.Movie -> ServerAPI.Entities.DataTransferObjects.MovieDto
+
+Destination Member:
+Producers
+
+2022-12-12 23:05:23.2695 INFO Returned all Movie from database.
+2022-12-12 23:05:38.4882 INFO Returned owner with details for id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 23:06:41.6690 INFO Returned all Movie from database.
+2022-12-12 23:06:54.9006 INFO Returned owner with details for id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 23:14:17.1817 INFO Returned all Movie from database.
+2022-12-12 23:14:32.0642 INFO Returned movie with id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 23:17:30.0922 INFO Returned all Movie from database.
+2022-12-12 23:17:45.0330 INFO Returned movie with id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 23:18:32.2919 INFO Returned all Movie from database.
+2022-12-12 23:18:57.9298 INFO Returned movie with id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 23:24:00.7423 INFO Returned all Movie from database.
+2022-12-12 23:24:17.7254 INFO Returned movie with id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 23:25:36.5006 INFO Returned all Movie from database.
+2022-12-12 23:29:26.3542 INFO Returned all Movie from database.
+2022-12-12 23:33:27.9315 INFO Returned all Movie from database.
+2022-12-12 23:38:21.6248 INFO Returned all Movie from database.
+2022-12-12 23:40:48.8976 INFO Returned all Movie from database.
+2022-12-12 23:41:27.3626 INFO Returned all Movie from database.
+2022-12-12 23:41:47.2134 INFO Returned movie with id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-12 23:57:16.2251 INFO Returned all Movie from database.
+2022-12-12 23:59:46.1063 INFO Returned all Movie from database.
