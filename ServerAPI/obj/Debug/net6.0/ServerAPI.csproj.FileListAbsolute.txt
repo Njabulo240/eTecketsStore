@@ -28,3 +28,16 @@
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/NLog.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/NLog.Extensions.Logging.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/nlog.config
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/MySqlConnector.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Pomelo.EntityFrameworkCore.MySql.dll

@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using ServerAPI.Contracts;
 using ServerAPI.LoggerService;
+using ServerAPI.Repository;
 
 namespace ServerAPI.Extensions
 {
@@ -31,6 +33,16 @@ public static void ConfigureIISIntegration(this IServiceCollection services)
 public static void ConfigureLoggerService(this IServiceCollection services)
 {
     services.AddSingleton<ILoggerManager, LoggerManager>();
+}
+
+
+//ConfigureMySqlContext
+
+public static void ConfigureMySqlContext(this IServiceCollection services, IConfiguration config)
+{
+    var connectionString = config["mysqlconnection:connectionString"];
+    services.AddDbContext<RepositoryContext>(o => o.UseMySql(connectionString, 
+        MySqlServerVersion.LatestSupportedServerVersion));
 }
 
     }
