@@ -45,5 +45,14 @@ public static void ConfigureMySqlContext(this IServiceCollection services, IConf
         MySqlServerVersion.LatestSupportedServerVersion));
 }
 
+
+
+public static void ConfigureRepositoryWrapper(this IServiceCollection services)
+{
+    services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+}
+
+
+
     }
 }
