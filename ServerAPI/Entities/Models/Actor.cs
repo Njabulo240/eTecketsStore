@@ -3,7 +3,7 @@ using ServerAPI.Contracts;
 
 namespace ServerAPI.Entities.Models
 {
-    public class Actor:IEntityBase
+    public class Actor
     {
         [Key]
         public int Id { get; set; }

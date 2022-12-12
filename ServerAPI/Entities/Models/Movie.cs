@@ -5,7 +5,7 @@ using ServerAPI.Contracts.Enums;
 
 namespace ServerAPI.Entities.Models
 {
-    public class Movie:IEntityBase
+    public class Movie
     {
          [Key]
         public int Id { get; set; }
