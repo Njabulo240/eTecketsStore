@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "hhvStdTxX24r3MnqLnkrzfV2wiglBMzxQ3kexFuVzIf/N2ipVXbBY3qMvgVZy5Al4/LzY35U26urDAi2vZU5CQ==",
+  "success": true,
+  "projectFilePath": "/home/njabulo/upwork project/eTickets/ServerAPI/ServerAPI.csproj",
+  "expectedPackageFiles": [
+    "/home/njabulo/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/njabulo/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/njabulo/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/njabulo/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/njabulo/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/njabulo/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
