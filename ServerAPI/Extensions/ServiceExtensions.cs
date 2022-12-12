@@ -1,3 +1,6 @@
+using ServerAPI.Contracts;
+using ServerAPI.LoggerService;
+
 namespace ServerAPI.Extensions
 {
     public static class ServiceExtensions
@@ -24,6 +27,11 @@ public static void ConfigureIISIntegration(this IServiceCollection services)
       });          
 }
 
+//
+public static void ConfigureLoggerService(this IServiceCollection services)
+{
+    services.AddSingleton<ILoggerManager, LoggerManager>();
+}
 
     }
 }
