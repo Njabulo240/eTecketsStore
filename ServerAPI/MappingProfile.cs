@@ -14,6 +14,11 @@ namespace ServerAPI
         CreateMap<Cinema, CinemaDto>();
 
         CreateMap<Actor_Movie, Actor_MovieDto>();
+
+        CreateMap<ActorForCreationDto, Actor>();
+        CreateMap<ProducerForCreationDto, Producer>();
+        CreateMap<MovieForCreationDto, Movie>();
+        CreateMap<CinemaForCreationDto, Cinema>();
     }
 }
 }

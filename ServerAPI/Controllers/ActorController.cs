@@ -38,7 +38,7 @@ namespace ServerAPI.Controllers
         }
 
 
-[HttpGet("{id}")]
+[HttpGet("{id}", Name = "ActorById")]
 public IActionResult GetActorById(Guid id)
 {
     try
@@ -64,7 +64,33 @@ public IActionResult GetActorById(Guid id)
 }
 
 
-
+[HttpPost]
+public IActionResult CreateActor([FromBody]ActorForCreationDto actor)
+{
+    try
+    {
+        if (actor is null)
+        {
+            _logger.LogError("Actor object sent from client is null.");
+            return BadRequest("Actor object is null");
+        }
+        if (!ModelState.IsValid)
+        {
+            _logger.LogError("Invalid Actor object sent from client.");
+            return BadRequest("Invalid model object");
+        }
+        var actorEntity = _mapper.Map<Actor>(actor);
+        _repository.Actor.CreateActor(actorEntity);
+        _repository.Save();
+        var createdActor = _mapper.Map<ActorDto>(actorEntity);
+        return CreatedAtRoute("ActorById", new { id = createdActor.Id }, createdActor);
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError($"Something went wrong inside CreateActor action: {ex.Message}");
+        return StatusCode(500, "Internal server error");
+    }
+}
 
 
 

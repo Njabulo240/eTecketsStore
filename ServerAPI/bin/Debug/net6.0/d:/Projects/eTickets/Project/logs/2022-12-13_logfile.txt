@@ -3,3 +3,43 @@
 2022-12-13 00:10:43.3321 INFO Returned all Movie from database.
 2022-12-13 00:16:36.2166 INFO Returned all Movie from database.
 2022-12-13 00:16:48.8685 INFO Returned movie with id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-13 00:19:47.6972 INFO Returned owner with details for id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-13 12:11:33.5905 ERROR Something went wrong inside CreateActor action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ActorForCreationDto -> Actor
+ServerAPI.Entities.DataTransferObjects.ActorForCreationDto -> ServerAPI.Entities.Models.Actor
+2022-12-13 12:14:26.6999 ERROR Something went wrong inside CreateActor action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ActorForCreationDto -> Actor
+ServerAPI.Entities.DataTransferObjects.ActorForCreationDto -> ServerAPI.Entities.Models.Actor
+2022-12-13 12:15:30.1362 INFO Returned all Actor from database.
+2022-12-13 12:15:56.4906 ERROR Something went wrong inside CreateActor action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ActorForCreationDto -> Actor
+ServerAPI.Entities.DataTransferObjects.ActorForCreationDto -> ServerAPI.Entities.Models.Actor
+2022-12-13 12:16:50.8402 ERROR Something went wrong inside CreateActor action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+ActorForCreationDto -> Actor
+ServerAPI.Entities.DataTransferObjects.ActorForCreationDto -> ServerAPI.Entities.Models.Actor
+2022-12-13 12:17:46.8727 ERROR Something went wrong inside CreateOwner action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CinemaForCreationDto -> Cinema
+ServerAPI.Entities.DataTransferObjects.CinemaForCreationDto -> ServerAPI.Entities.Models.Cinema
+2022-12-13 12:18:37.6156 ERROR Something went wrong inside CreateOwner action: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CinemaForCreationDto -> Cinema
+ServerAPI.Entities.DataTransferObjects.CinemaForCreationDto -> ServerAPI.Entities.Models.Cinema
+2022-12-13 12:24:22.3413 ERROR Something went wrong inside CreateMovie action: An error occurred while saving the entity changes. See the inner exception for details.
+2022-12-13 13:21:51.6317 INFO Returned all Actor from database.
+2022-12-13 13:42:56.2084 INFO Returned all Movie from database.
+2022-12-13 13:43:16.3828 INFO Returned movie with id: 08dadcf4-87f4-403c-8197-bb9c2c9a85ff
+2022-12-13 13:43:29.7818 INFO Returned owner with details for id: 08dadcf4-87f4-403c-8197-bb9c2c9a85ff
+2022-12-13 13:44:19.2965 INFO Returned owner with details for id: 8a6c20f5-00b1-4e13-be35-7800593d3398
+2022-12-13 14:13:39.1562 ERROR Something went wrong inside CreateMovie action: The entity type 'List<Guid>' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+2022-12-13 15:53:55.6574 ERROR Something went wrong inside CreateOwner action: The entity type 'List<Guid>' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.

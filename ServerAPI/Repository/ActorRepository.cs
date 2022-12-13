@@ -9,7 +9,7 @@ namespace ServerAPI.Repository
         {
         }
 
-        public void CreateOwner(Actor actor)
+        public void CreateActor(Actor actor)
         {
             Create(actor);
         }

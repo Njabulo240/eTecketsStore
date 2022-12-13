@@ -2,6 +2,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ServerAPI.Contracts;
 using ServerAPI.Entities.DataTransferObjects;
+using ServerAPI.Entities.Models;
 
 namespace ServerAPI.Controllers
 {
@@ -35,7 +36,7 @@ namespace ServerAPI.Controllers
             }
         }
 
-[HttpGet("{id}")]
+[HttpGet("{id}", Name = "CinemaById")]
 public IActionResult GetCinemaById(Guid id)
 {
     try
@@ -59,6 +60,46 @@ public IActionResult GetCinemaById(Guid id)
         return StatusCode(500, "Internal server error");
    }
 }
+
+
+
+
+
+[HttpPost]
+public IActionResult CreateCinema([FromBody]CinemaForCreationDto cinema)
+{
+    try
+    {
+        if (cinema is null)
+        {
+            _logger.LogError("cinema object sent from client is null.");
+            return BadRequest("cinema object is null");
+        }
+        if (!ModelState.IsValid)
+        {
+            _logger.LogError("Invalid owner object sent from client.");
+            return BadRequest("Invalid model object");
+        }
+        var cinemaEntity = _mapper.Map<Cinema>(cinema);
+        _repository.Cinema.CreateCinema(cinemaEntity);
+        _repository.Save();
+        var createdCinema = _mapper.Map<CinemaDto>(cinemaEntity);
+        return CreatedAtRoute("CinemaById", new { id = createdCinema.Id }, createdCinema);
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError($"Something went wrong inside CreateOwner action: {ex.Message}");
+        return StatusCode(500, "Internal server error");
+    }
+}
+
+
+
+
+
+
+
+
 
 
     }

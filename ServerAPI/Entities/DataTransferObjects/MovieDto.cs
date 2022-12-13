@@ -23,8 +23,8 @@ namespace ServerAPI.Entities.DataTransferObjects
 
         //Cinema]
         
-    public Guid CinemaId { get; set; }
-    public Guid ProducerId { get; set; }
+        public Guid CinemaId { get; set; }
+        public Guid ProducerId { get; set; }
 
 
 

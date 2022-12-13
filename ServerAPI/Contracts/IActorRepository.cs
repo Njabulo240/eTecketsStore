@@ -6,6 +6,6 @@ namespace ServerAPI.Contracts
     {
     IEnumerable<Actor> GetAllActors();
     Actor GetActorById(Guid actorId);
-    void CreateOwner(Actor actor);
+    void CreateActor(Actor actor);
     }
 }

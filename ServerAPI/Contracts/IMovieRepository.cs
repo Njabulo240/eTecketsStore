@@ -1,3 +1,4 @@
+using ServerAPI.Entities.DataTransferObjects;
 using ServerAPI.Entities.Models;
 
 namespace ServerAPI.Contracts
@@ -7,6 +8,9 @@ namespace ServerAPI.Contracts
          IEnumerable<Movie> GetAllMovies();
     Movie GetMovieById(Guid movieId);
    Movie GetMovieByIdDetails(Guid movieId);
-    void CreateMovie(Movie movie);
+    void CreateMovieAsync(Movie movie);
+
+
+   
     }
 }
