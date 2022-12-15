@@ -1,0 +1,6 @@
+2022-12-15 21:08:39.8063 INFO Returned all Actor from database.
+2022-12-15 21:08:56.5914 INFO Returned all Actor from database.
+2022-12-15 21:22:12.6206 INFO Returned all Actor from database.
+2022-12-15 21:26:16.6884 INFO Returned all Actor from database.
+2022-12-15 21:26:18.4445 INFO Returned all Actor from database.
+2022-12-15 21:29:19.3004 INFO Returned all Actor from database.

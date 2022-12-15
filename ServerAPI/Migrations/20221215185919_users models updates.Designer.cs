@@ -11,14 +11,14 @@ using ServerAPI.Repository;
 namespace ServerAPI.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20221212202855_models Id")]
-    partial class modelsId
+    [Migration("20221215185919_users models updates")]
+    partial class usersmodelsupdates
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.11")
+                .HasAnnotation("ProductVersion", "6.0.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("ServerAPI.Entities.Models.Actor", b =>
@@ -61,61 +61,6 @@ namespace ServerAPI.Migrations
                     b.ToTable("Actors_Movies");
                 });
 
-            modelBuilder.Entity("ServerAPI.Entities.Models.ApplicationUser", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<int>("AccessFailedCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("longtext");
-
-                    b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("FullName")
-                        .HasColumnType("longtext");
-
-                    b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("NormalizedEmail")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("NormalizedUserName")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("PasswordHash")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("longtext");
-
-                    b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("SecurityStamp")
-                        .HasColumnType("longtext");
-
-                    b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("UserName")
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ApplicationUser");
-                });
-
             modelBuilder.Entity("ServerAPI.Entities.Models.Cinema", b =>
                 {
                     b.Property<Guid>("Id")
@@ -138,6 +83,38 @@ namespace ServerAPI.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Cinemas");
+                });
+
+            modelBuilder.Entity("ServerAPI.Entities.Models.LoginModel", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("RefreshTokenExpiryTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("LoginModels");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1L,
+                            Password = "def@123",
+                            RefreshTokenExpiryTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "johndoe"
+                        });
                 });
 
             modelBuilder.Entity("ServerAPI.Entities.Models.Movie", b =>
@@ -183,54 +160,6 @@ namespace ServerAPI.Migrations
                     b.ToTable("Movies");
                 });
 
-            modelBuilder.Entity("ServerAPI.Entities.Models.Order", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)")
-                        .HasColumnName("MovieId");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("varchar(255)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Orders");
-                });
-
-            modelBuilder.Entity("ServerAPI.Entities.Models.OrderItem", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)")
-                        .HasColumnName("OrderItemId");
-
-                    b.Property<int>("Amount")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("MovieId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<Guid>("OrderId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<double>("Price")
-                        .HasColumnType("double");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MovieId");
-
-                    b.HasIndex("OrderId");
-
-                    b.ToTable("OrderItems");
-                });
-
             modelBuilder.Entity("ServerAPI.Entities.Models.Producer", b =>
                 {
                     b.Property<Guid>("Id")
@@ -256,27 +185,52 @@ namespace ServerAPI.Migrations
                     b.ToTable("Producers");
                 });
 
-            modelBuilder.Entity("ServerAPI.Entities.Models.ShoppingCartItem", b =>
+            modelBuilder.Entity("ServerAPI.Entities.Models.UserModel", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)")
-                        .HasColumnName("ShoppingCartItemId");
-
-                    b.Property<int>("Amount")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("MovieId")
-                        .HasColumnType("char(36)");
+                    b.Property<string>("EmailAddress")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("ShoppingCartId")
+                    b.Property<string>("GivenName")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("RefreshTokenExpiryTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Surname")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Username")
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MovieId");
+                    b.ToTable("UserModels");
 
-                    b.ToTable("ShoppingCartItems");
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            EmailAddress = "njeb@gmail.com",
+                            GivenName = "Njebs",
+                            Password = "qwerty24",
+                            RefreshTokenExpiryTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Role = "Admin",
+                            Surname = "Mamba",
+                            Username = "Njabu"
+                        });
                 });
 
             modelBuilder.Entity("ServerAPI.Entities.Models.Actor_Movie", b =>
@@ -300,7 +254,7 @@ namespace ServerAPI.Migrations
 
             modelBuilder.Entity("ServerAPI.Entities.Models.Movie", b =>
                 {
-                    b.HasOne("ServerAPI.Entities.Models.Cinema", "Cinema")
+                    b.HasOne("ServerAPI.Entities.Models.Cinema", "Cinemas")
                         .WithMany("Movies")
                         .HasForeignKey("CinemaId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -312,46 +266,9 @@ namespace ServerAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Cinema");
+                    b.Navigation("Cinemas");
 
                     b.Navigation("Producers");
-                });
-
-            modelBuilder.Entity("ServerAPI.Entities.Models.Order", b =>
-                {
-                    b.HasOne("ServerAPI.Entities.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("ServerAPI.Entities.Models.OrderItem", b =>
-                {
-                    b.HasOne("ServerAPI.Entities.Models.Movie", "Movie")
-                        .WithMany()
-                        .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ServerAPI.Entities.Models.Order", "Order")
-                        .WithMany("OrderItems")
-                        .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Movie");
-
-                    b.Navigation("Order");
-                });
-
-            modelBuilder.Entity("ServerAPI.Entities.Models.ShoppingCartItem", b =>
-                {
-                    b.HasOne("ServerAPI.Entities.Models.Movie", "Movie")
-                        .WithMany()
-                        .HasForeignKey("MovieId");
-
-                    b.Navigation("Movie");
                 });
 
             modelBuilder.Entity("ServerAPI.Entities.Models.Actor", b =>
@@ -367,11 +284,6 @@ namespace ServerAPI.Migrations
             modelBuilder.Entity("ServerAPI.Entities.Models.Movie", b =>
                 {
                     b.Navigation("Actors_Movies");
-                });
-
-            modelBuilder.Entity("ServerAPI.Entities.Models.Order", b =>
-                {
-                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("ServerAPI.Entities.Models.Producer", b =>

@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ServerAPI.Contracts;
 using ServerAPI.Entities.DataTransferObjects;
@@ -20,6 +21,7 @@ namespace ServerAPI.Controllers
                 _mapper = mapper;
         }
         [HttpGet]
+        [Authorize(Roles = "User")]
         public IActionResult GetAllActors()
         {
             try
@@ -39,6 +41,7 @@ namespace ServerAPI.Controllers
 
 
 [HttpGet("{id}", Name = "ActorById")]
+
 public IActionResult GetActorById(Guid id)
 {
     try

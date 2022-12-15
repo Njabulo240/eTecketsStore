@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ServerAPI.Repository;
 
@@ -10,9 +11,10 @@ using ServerAPI.Repository;
 namespace ServerAPI.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    partial class RepositoryContextModelSnapshot : ModelSnapshot
+    [Migration("20221215182354_users models")]
+    partial class usersmodels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -198,12 +200,6 @@ namespace ServerAPI.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("RefreshToken")
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime>("RefreshTokenExpiryTime")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<string>("Role")
                         .HasColumnType("longtext");
 
@@ -224,7 +220,6 @@ namespace ServerAPI.Migrations
                             EmailAddress = "njeb@gmail.com",
                             GivenName = "Njebs",
                             Password = "qwerty24",
-                            RefreshTokenExpiryTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Role = "Admin",
                             Surname = "Mamba",
                             Username = "Njabu"

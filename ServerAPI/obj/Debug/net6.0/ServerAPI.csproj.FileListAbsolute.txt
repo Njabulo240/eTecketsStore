@@ -6,9 +6,12 @@
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/ServerAPI.runtimeconfig.json
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/ServerAPI.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/ServerAPI.pdb
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/AutoMapper.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Humanizer.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/MessagePack.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/MessagePack.Annotations.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Razor.Language.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Build.dll
@@ -35,6 +38,12 @@
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.NET.StringTools.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.OpenApi.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/Microsoft.VisualStudio.Debugger.Contracts.dll
@@ -70,6 +79,8 @@
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/System.Composition.TypedParts.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/System.Drawing.Common.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/System.Reflection.MetadataLoadContext.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/System.Security.Permissions.dll
 /home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/System.Windows.Extensions.dll
@@ -250,5 +261,3 @@
 /home/njabulo/upwork project/eTickets/ServerAPI/obj/Debug/net6.0/ServerAPI.pdb
 /home/njabulo/upwork project/eTickets/ServerAPI/obj/Debug/net6.0/ServerAPI.genruntimeconfig.cache
 /home/njabulo/upwork project/eTickets/ServerAPI/obj/Debug/net6.0/ref/ServerAPI.dll
-/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/AutoMapper.dll
-/home/njabulo/upwork project/eTickets/ServerAPI/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
